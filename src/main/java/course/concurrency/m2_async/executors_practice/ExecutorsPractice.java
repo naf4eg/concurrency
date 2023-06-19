@@ -1,4 +1,4 @@
-package course.concurrency.m0_intro;
+package course.concurrency.m2_async.executors_practice;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * количество потоков выделяется не сразу, а по мере необходимости
  */
-public class Main {
+public class ExecutorsPractice {
     public static long longTask() throws InterruptedException {
         Thread.sleep(1000); // + try-catch
         return ThreadLocalRandom.current().nextInt();
