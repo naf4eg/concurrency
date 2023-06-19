@@ -14,15 +14,14 @@ public class AsyncClassTest {
     public ApplicationContext context;
 
     @Autowired
-    @Qualifier("applicationTaskExecutor")
+    @Qualifier("applicationTaskExecutor2")
     private ThreadPoolTaskExecutor executor;
 
-    @Async
+    @Async("applicationTaskExecutor2")
     public void runAsyncTask() {
         System.out.println("runAsyncTask: " + Thread.currentThread().getName());
         internalTask();
     }
-
     public void internalTask() {
         System.out.println("internalTask: " + Thread.currentThread().getName());
     }
