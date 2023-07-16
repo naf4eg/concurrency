@@ -6,7 +6,7 @@ public class LoadGenerator {
 
     public static void work() {
        sleep();
-      //  compute();
+        compute();
     }
 
     private static void sleep() {

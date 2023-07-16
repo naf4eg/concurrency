@@ -25,7 +25,7 @@ public class ReportServiceCF {
                 customersCF.thenCombine(itemsCF,
                         (customers, orders) -> combineResults(orders, customers));
 
-        return reportTask.join();
+        return  reportTask.join();
     }
 
     private Others.Report combineResults(Collection<Others.Item> items, Collection<Others.Customer> customers) {
