@@ -17,10 +17,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
         <jmh.version>1.35</jmh.version>
         <junit.version>5.8.2</junit.version>
+        <argLine>-Xmx6024M -Xms2024M -XX:+UseG1GC</argLine>
     </properties>
 
     <dependencies>
