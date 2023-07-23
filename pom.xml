@@ -21,7 +21,7 @@
         <maven.compiler.target>20</maven.compiler.target>
         <jmh.version>1.35</jmh.version>
         <junit.version>5.8.2</junit.version>
-        <argLine>-Xmx6024M -Xms2024M -XX:+UseG1GC</argLine>
+        <argLine>-Xmx8024M -Xms4024M -XX:+UseG1GC</argLine>
     </properties>
 
     <dependencies>
